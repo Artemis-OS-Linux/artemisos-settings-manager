@@ -42,27 +42,7 @@ file(GLOB KERNEL_GLOB
      changelogs/linux51.html
      changelogs/linux52.html
      changelogs/linux53.html
-     changelogs/linux54.html
-     changelogs/linux55.html
-     changelogs/linux56.html
-     changelogs/linux57.html
-     changelogs/linux510.html
-     changelogs/linux511.html
-     changelogs/linux512.html
-     changelogs/linux513.html
-     changelogs/linux514.html
-     changelogs/linux515.html
-     changelogs/linux516.html
-     changelogs/linux517.html
-     changelogs/linux518.html
-     changelogs/linux519.html
-     changelogs/linux60.html
-     changelogs/linux61.html
-     changelogs/linux62.html
-     changelogs/linux63.html
-     changelogs/linux64.html
-     changelogs/linux65.html
-     changelogs/linux66.html)
+     changelogs/linux54.html)
 
 set(KERNEL_SRCS
     ${KERNEL_GLOB}
@@ -108,5 +88,5 @@ target_link_libraries(msm_kernel_authhelper
     KF5::Auth)
 
 install(TARGETS msm_kernel_authhelper DESTINATION ${KAUTH_HELPER_INSTALL_DIR})
-kauth_install_helper_files(msm_kernel_authhelper org.manjaro.msm.kernel root)
-kauth_install_actions(org.manjaro.msm.kernel msm_kernel.actions)
+kauth_install_helper_files(msm_kernel_authhelper org.garuda.msm.kernel root)
+kauth_install_actions(org.garuda.msm.kernel msm_kernel.actions)
