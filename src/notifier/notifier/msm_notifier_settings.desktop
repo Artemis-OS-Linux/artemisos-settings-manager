@@ -6,7 +6,7 @@ Comment=Graphical Settings for Artemis OS Notifier
 
 
 Exec=msm_notifier --settings
-Icon=preferences-desktop
+Icon=artemisos-settings-manager
 Terminal=false
 Type=Application
 Categories=Settings;DesktopSettings;X-LXDE-Settings;X-XFCE-SettingsDialog;X-KDE-Settings;X-XFCE-SystemSettings;
