@@ -1,6 +1,6 @@
 [Domain]
-Name=manjaro-settings-manager
-Name[x-test]=xxmanjaro-settings-managerxx
+Name=artemisos-settings-manager
+Name[x-test]=xxartemsisos-settings-managerxx
 Icon=kauth-example
 URL=https://github.com/manjaro/manjaro-settings-manager
 

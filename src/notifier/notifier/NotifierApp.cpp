@@ -27,8 +27,8 @@
 NotifierApp::NotifierApp( int& argc, char* argv[] )
     : QApplication( argc, argv )
 {
-    setOrganizationName( "Manjaro" );
-    setOrganizationDomain( "Manjaro" );
+    setOrganizationName( "Artemis OS" );
+    setOrganizationDomain( "Artemis OS" );
     setApplicationName( "MSM Notifier" );
     setApplicationVersion( PROJECT_VERSION );
     setQuitOnLastWindowClosed( false );

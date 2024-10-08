@@ -1,7 +1,7 @@
 /*
  *  This file is part of Manjaro Settings Manager.
  *
- *  Roland Singer <roland@manjaro.org>
+ *  Roland Singer <roland@artemisos.org>
  *
  *  Manjaro Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -120,7 +120,7 @@ NotifierSettingsDialog::buttonApply_clicked()
 void
 NotifierSettingsDialog::load()
 {
-    QSettings settings( "manjaro", "manjaro-settings-manager" );
+    QSettings settings( "artemisos", "artemisos-settings-manager" );
     bool checkLanguagePackage = settings.value( "notifications/checkLanguagePackages", true ).toBool();
     bool checkUnsupportedKernel = settings.value( "notifications/checkUnsupportedKernel", true ).toBool();
     bool checkUnsupportedKernelRunning = settings.value( "notifications/checkUnsupportedKernelRunning", true ).toBool();
@@ -155,7 +155,7 @@ NotifierSettingsDialog::save()
     bool checkNewKernelLts = ui->checkNewKernelLtsBox->isChecked();
     bool checkNewKernelRecommended = ui->checkNewKernelRecommendedBox->isChecked();
 
-    QSettings settings( "manjaro", "manjaro-settings-manager" );
+    QSettings settings( "artemisos", "artemisos-settings-manager" );
     settings.setValue( "notifications/checkLanguagePackages", checkLanguagePackage );
     settings.setValue( "notifications/checkUnsupportedKernel", checkUnsupportedKernel );
     settings.setValue( "notifications/checkUnsupportedKernelRunning", checkUnsupportedKernelRunning );

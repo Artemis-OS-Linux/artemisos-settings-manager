@@ -29,16 +29,16 @@ MsmApplication::MsmApplication( int& argc, char* argv[] )
     : QApplication( argc, argv ),
       m_mainwindow( 0 )
 {
-    setOrganizationName( "Manjaro" );
-    setOrganizationDomain( "Manjaro" );
-    setApplicationName( "Manjaro Settings Manager" );
+    setOrganizationName( "Artemis OS" );
+    setOrganizationDomain( "Artemis OS" );
+    setApplicationName( "Artemis OS Settings Manager" );
     setApplicationVersion( "0.5.6" );
 }
 
 
 MsmApplication::~MsmApplication()
 {
-    qDebug() << "Shutting down Manjaro Settings Manager...";
+    qDebug() << "Shutting down Artemis OS Settings Manager...";
 }
 
 
