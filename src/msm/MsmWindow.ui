@@ -21,7 +21,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="msm.qrc">
-    <normaloff>:/images/resources/settings.png</normaloff>:/images/resources/settings.png</iconset>
+    <normaloff>:/usr/share/icons/hicolor/scalable/apps/ArtemisOS-settings-manager.svg</normaloff>:/usr/share/icons/hicolor/scalable/apps/ArtemisOS-settings-manager.svg</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -124,7 +124,7 @@
        </sizepolicy>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QVBoxLayout" name="verticalLayout">
