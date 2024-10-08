@@ -33,8 +33,7 @@ int main( int argc, char* argv[] )
     #if QT_VERSION >= 0x050600
       QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     #endif
-    QApplication a(argc, argv);
-    a.setWindowIcon(QIcon("/usr/share/pixmaps/ArtemisOS.png"));
+
 
     MsmApplication app( argc, argv );
 
