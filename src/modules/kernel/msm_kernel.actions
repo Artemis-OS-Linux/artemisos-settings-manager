@@ -1,16 +1,16 @@
 [Domain]
-Name=garuda-settings-manager
-Name[x-test]=xxgaruda-settings-managerxx
+Name=manjaro-settings-manager
+Name[x-test]=xxmanjaro-settings-managerxx
 Icon=kauth-example
-URL=https://github.com/garuda/garuda-settings-manager
+URL=https://github.com/manjaro/manjaro-settings-manager
 
-[org.garuda.msm.kernel.install]
+[org.manjaro.msm.kernel.install]
 Name=Install Kernel
 Description=Install Kernel
 Policy=auth_admin
 Persistence=session
 
-[org.garuda.msm.kernel.remove]
+[org.manjaro.msm.kernel.remove]
 Name=Remove Kernel
 Description=Remove Kernel
 Policy=auth_admin

@@ -194,8 +194,8 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove garuda kernels</source>
-        <translation>Добавить или удалить ядра garuda</translation>
+        <source>Add and remove manjaro kernels</source>
+        <translation>Добавить или удалить ядра manjaro</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="77"/>
@@ -573,8 +573,8 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="46"/>
-        <source>Garuda Hardware Detection graphical user interface</source>
-        <translation>Графический интерфейс Garuda Hardware Detection</translation>
+        <source>Manjaro Hardware Detection graphical user interface</source>
+        <translation>Графический интерфейс Manjaro Hardware Detection</translation>
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="83"/>
@@ -644,8 +644,8 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
-        <source>Garuda Settings Manager</source>
-        <translation>Менеджер настроек Garuda</translation>
+        <source>Manjaro Settings Manager</source>
+        <translation>Менеджер настроек Manjaro</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="185"/>
@@ -675,8 +675,8 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="153"/>
-        <source>Garuda Settings</source>
-        <translation>Настройки Garuda</translation>
+        <source>Manjaro Settings</source>
+        <translation>Настройки Manjaro</translation>
     </message>
 </context>
 <context>
@@ -714,8 +714,8 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Garuda Settings Manager</source>
-        <translation>Менеджер настроек Garuda</translation>
+        <source>Manjaro Settings Manager</source>
+        <translation>Менеджер настроек Manjaro</translation>
     </message>
     <message numerus="yes">
         <location filename="../../notifier/notifier/Notifier.cpp" line="192"/>
@@ -840,17 +840,17 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <message>
         <location filename="../../modules/keyboard/ui/PageKeyboard.ui" line="183"/>
         <source>Rate:</source>
-        <translation>Тариф:</translation>
+        <translation>Частота:</translation>
     </message>
     <message>
         <location filename="../../modules/keyboard/ui/PageKeyboard.ui" line="201"/>
         <source>Rate  </source>
-        <translation>Тариф</translation>
+        <translation>Частота</translation>
     </message>
     <message>
         <location filename="../../modules/keyboard/ui/PageKeyboard.ui" line="208"/>
         <source>Set Rate</source>
-        <translation>Установка тарифа</translation>
+        <translation>Установка частота</translation>
     </message>
 </context>
 <context>

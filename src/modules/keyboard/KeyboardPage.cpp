@@ -1,21 +1,21 @@
 /*
- *  This file is part of Garuda Settings Manager.
+ *  This file is part of Manjaro Settings Manager.
  *
  *  Roland Singer <roland@manjaro.org>
  *  Ramon Buldó <ramon@manjaro.org>
  *
- *  Garuda Settings Manager is free software: you can redistribute it and/or modify
+ *  Manjaro Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
  *  (at your option) any later version.
  *
- *  Garuda Settings Manager is distributed in the hope that it will be useful,
+ *  Manjaro Settings Manager is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Garuda Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
+ *  along with Manjaro Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include "KeyboardCommon.h"
@@ -39,8 +39,7 @@ KeyboardPage::KeyboardPage( QWidget* parent ) :
 {
     ui->setupUi( this );
     setTitle( KeyboardCommon::getTitle() );
-    QPixmap pix=QIcon::fromTheme("preferences-desktop-keyboard").pixmap(48), QIcon(":/images/resources/keyboard.png");
-    setIcon( pix );
+    setIcon( QPixmap( ":/images/resources/keyboard.png" ) );
     setShowApplyButton( true );
     setName( KeyboardCommon::getName() );
 

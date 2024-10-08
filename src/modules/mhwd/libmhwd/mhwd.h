@@ -1,5 +1,5 @@
 /*
- *  mhwd - Garuda Hardware Detection
+ *  mhwd - Manjaro Hardware Detection
  *  Roland Singer <roland@manjaro.org>
  *
  *  This program is free software: you can redistribute it and/or modify

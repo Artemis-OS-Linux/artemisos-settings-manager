@@ -194,8 +194,8 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove garuda kernels</source>
-        <translation>Shto dhe hiq kernelin garuda</translation>
+        <source>Add and remove manjaro kernels</source>
+        <translation>Shto dhe hiq kernelin manjaro</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="77"/>
@@ -573,7 +573,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="46"/>
-        <source>Garuda Hardware Detection graphical user interface</source>
+        <source>Manjaro Hardware Detection graphical user interface</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -644,7 +644,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
-        <source>Garuda Settings Manager</source>
+        <source>Manjaro Settings Manager</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -675,7 +675,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="153"/>
-        <source>Garuda Settings</source>
+        <source>Manjaro Settings</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -714,7 +714,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Garuda Settings Manager</source>
+        <source>Manjaro Settings Manager</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">

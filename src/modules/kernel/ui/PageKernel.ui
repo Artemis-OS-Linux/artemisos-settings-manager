@@ -6,17 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
+    <width>724</width>
     <height>440</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string notr="true">Form</string>
   </property>
-  <property name="windowIcon">
-   <iconset theme="kernel"/>
-  </property>
-  <layout class="QHBoxLayout" name="horizontalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QListView" name="kernelListView">
      <property name="focusPolicy">
@@ -28,9 +25,12 @@
     </widget>
    </item>
    <item>
-    <widget class="QPushButton" name="refresh">
+    <widget class="QLabel" name="kcmdisclaimer">
      <property name="text">
-      <string>refresh</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Made by Manjaro. &lt;a href=&quot;https://gitlab.manjaro.org/applications/manjaro-settings-manager/-/issues&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;Report&lt;/span&gt;&lt;/a&gt; an issue.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
      </property>
     </widget>
    </item>

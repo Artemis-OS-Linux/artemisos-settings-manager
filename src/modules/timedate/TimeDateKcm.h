@@ -1,5 +1,5 @@
 /*
- *  Garuda Settings Manager
+ *  Manjaro Settings Manager
  *  Ramon Buldó <ramon@manjaro.org>
  *
  *  Copyright (C) 2007 Free Software Foundation, Inc.

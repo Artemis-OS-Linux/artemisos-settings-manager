@@ -13,9 +13,6 @@
   <property name="windowTitle">
    <string notr="true">Form</string>
   </property>
-  <property name="windowIcon">
-   <iconset theme="preferences-system-time"/>
-  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QGroupBox" name="timeDateGroupBox">
@@ -69,7 +66,7 @@
           <property name="minimumSize">
            <size>
             <width>150</width>
-            <height>30</height>
+            <height>0</height>
            </size>
           </property>
           <property name="displayFormat">
@@ -104,7 +101,7 @@
           <property name="minimumSize">
            <size>
             <width>150</width>
-            <height>30</height>
+            <height>0</height>
            </size>
           </property>
           <property name="displayFormat">

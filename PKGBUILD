@@ -1,16 +1,16 @@
 # Maintainer : Ramon Buldo <ramon@manjaro.org>
 
-pkgbase=artemisos-settings-manager
-pkgname=('artemisos-settings-manager' 'artemisos-settings-manager-kcm'
-         'artemisos-settings-manager-notifier' 'artemisos-settings-manager-knotifier')
+pkgbase=manjaro-settings-manager
+pkgname=('manjaro-settings-manager' 'manjaro-settings-manager-kcm' 
+         'manjaro-settings-manager-notifier' 'manjaro-settings-manager-knotifier')
 pkgver=0.5.6
 #_commit=e085b661c3c97e8aa39a5b49896a88a95d84caf9
 pkgrel=1
-pkgdesc="Artemis OS Linux System Settings Tool"
+pkgdesc="Manjaro Linux System Settings Tool"
 arch=('i686' 'x86_64')
 url="https://gitlab.manjaro.org/applications/manjaro-settings-manager"
 license=("GPL")
-depends=('icu' 'qt5-base>=5.12.3' 'hwinfo' 'kitemmodels' 'kauth'
+depends=('icu<64.2' 'qt5-base>=5.12.3' 'hwinfo' 'kitemmodels' 'kauth' 
          'kcoreaddons' 'ckbcomp' 'xdg-utils')
 optdepends=('manjaro-settings-manager-notifier: qt-based'
             'manjaro-settings-manager-knotifier: knotifications-based')
@@ -19,7 +19,7 @@ makedepends=('extra-cmake-modules' 'kdoctools' 'qt5-tools' 'knotifications'
 conflicts=('kcm-msm')
 # source=("msm-$pkgver-$pkgrel.tar.gz::$url/-/archive/$_commit/$pkgname-$_commit.tar.gz")
 source=("msm-$pkgver-$pkgrel.tar.gz::$url/-/archive/$pkgver/$pkgbase-$pkgver.tar.gz")
-sha256sums=('01950d1ff6f10a0f0276b4a0aa882a28fbd4a1ad4e13f85121ada0eb0f938f36')
+sha256sums=('2cebe2485563c9bb9445df0ae7644fdcfa6d0ac3167cf0205c5a785f8520f376')
 
 prepare() {
 #  mv ${pkgbase}-${_commit} ${pkgbase}-${pkgver}
@@ -40,7 +40,7 @@ build() {
   CXXFLAGS+="-std=gnu++98" make
 }
 
-package_artemisos-settings-manager() {
+package_manjaro-settings-manager() {
   cd "$srcdir/${pkgbase}-${pkgver}/build"
   make DESTDIR=${pkgdir} install 
   rm -rf $pkgdir/usr/bin/msm_notifier
@@ -52,9 +52,9 @@ package_artemisos-settings-manager() {
   rm -rf $pkgdir/etc/xdg
 }
 
-package_artemisos-settings-manager-kcm() {
-  pkgdesc="Artemis OS Linux System Settings Tool (KCM for Plasma 5)"
-  depends=('artemisos-settings-manager' 'kcmutils' 'kconfigwidgets')
+package_manjaro-settings-manager-kcm() {
+  pkgdesc="Manjaro Linux System Settings Tool (KCM for Plasma 5)"
+  depends=('manjaro-settings-manager' 'kcmutils' 'kconfigwidgets')
   replaces=('kcm-msm')
   cd "$srcdir/${pkgbase}-${pkgver}/build"
   make DESTDIR=${pkgdir} install
@@ -64,36 +64,36 @@ package_artemisos-settings-manager-kcm() {
   rm -rf $pkgdir/usr/share/{applications,dbus-1,icons,polkit-1}
 }
 
-package_artemisos-settings-manager-notifier() {
-  pkgdesc="Artemis OS Linux System Settings Tool (Notifier)"
-  depends=('artemisos-settings-manager')
-  provides=('artemisos-settings-manager-kde-notifier')
-  conflicts=('artemisos-settings-manager-kde-notifier')
+package_manjaro-settings-manager-notifier() {
+  pkgdesc="Manjaro Linux System Settings Tool (Notifier)"
+  depends=('manjaro-settings-manager')
+  provides=('manjaro-settings-manager-kde-notifier')
+  conflicts=('manjaro-settings-manager-kde-notifier')
   cd "$srcdir/${pkgbase}-${pkgver}/build"
   make DESTDIR=${pkgdir} install
   rm -rf $pkgdir/etc/dbus-1
   rm -rf $pkgdir/etc/xdg/autostart/msm_kde_notifier.desktop
   rm -rf $pkgdir/usr/lib/
   rm -rf $pkgdir/usr/share/{kservices5,dbus-1,icons,polkit-1}
-  rm -rf $pkgdir/usr/share/applications/artemisos*
+  rm -rf $pkgdir/usr/share/applications/manjaro*
   rm -rf $pkgdir/usr/share/applications/msm_kde_notifier_settings.desktop
-  rm -rf $pkgdir/usr/bin/artemisos*
+  rm -rf $pkgdir/usr/bin/manjaro*
   rm -rf $pkgdir/usr/bin/msm_kde_notifier
 }
 
-package_artemisos-settings-manager-knotifier() {
-  pkgdesc="Artemis OS Linux System Settings Tool (Notifier for Plasma 5)"
-  depends=('artemisos-settings-manager' 'knotifications')
-  conflicts=('artemisos-settings-manager-notifier')
-  replaces=('artemisos-settings-manager-kde-notifier')
+package_manjaro-settings-manager-knotifier() {
+  pkgdesc="Manjaro Linux System Settings Tool (Notifier for Plasma 5)"
+  depends=('manjaro-settings-manager' 'knotifications')
+  conflicts=('manjaro-settings-manager-notifier')
+  replaces=('manjaro-settings-manager-kde-notifier')
   cd "$srcdir/${pkgbase}-${pkgver}/build"
   make DESTDIR=${pkgdir} install
   rm -rf $pkgdir/etc/dbus-1
   rm -rf $pkgdir/etc/xdg/autostart/msm_notifier.desktop
   rm -rf $pkgdir/usr/lib/
   rm -rf $pkgdir/usr/share/{kservices5,dbus-1,icons,polkit-1}
-  rm -rf $pkgdir/usr/share/applications/artemisos*
+  rm -rf $pkgdir/usr/share/applications/manjaro*
   rm -rf $pkgdir/usr/share/applications/msm_notifier_settings.desktop
-  rm -rf $pkgdir/usr/bin/artemisos*
+  rm -rf $pkgdir/usr/bin/manjaro*
   rm -rf $pkgdir/usr/bin/msm_notifier
 } 

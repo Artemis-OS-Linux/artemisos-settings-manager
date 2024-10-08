@@ -2,7 +2,7 @@
  *
  *   Copyright 2014, Teo Mrnjavac <teo@kde.org>
  *
- *   Originally from the Garuda Installation Framework
+ *   Originally from the Manjaro Installation Framework
  *   by Roland Singer <roland@manjaro.org>
  *   Copyright (C) 2007 Free Software Foundation, Inc.
  *
