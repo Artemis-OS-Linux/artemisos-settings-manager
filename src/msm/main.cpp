@@ -49,6 +49,8 @@ int main( int argc, char* argv[] )
     parser.setApplicationDescription( app.applicationName() );
     parser.addHelpOption();
     //parser.addVersionOption();
+    application.setDesktopFileName("artemisos-settings-manager");
+
 
     QCommandLineOption debugOption( QStringList() << "d" << "debug",
                                     "Verbose output for debugging purposes." );
