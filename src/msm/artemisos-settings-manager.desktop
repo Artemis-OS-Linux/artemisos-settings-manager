@@ -4,7 +4,7 @@ Name=Artemis OS Settings Manager
 Comment=Graphical Settings Manager for Artemis OS
 
 Exec=artemisos-settings-manager
-Icon=preferences-desktop
+Icon=artemisos-settings-manager
 Terminal=false
 Type=Application
 Categories=Settings;DesktopSettings;X-LXDE-Settings;X-KDE-Settings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
