@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.5...3.27)
 project(artemisos-settings-manager VERSION 1.5.7)
 
-set(QT_MIN_VERSION "5.4.0")
-set(KF5_MIN_VERSION "5.31")
+set(QT_MIN_VERSION "6")
+set(KF6_MIN_VERSION "6")
 find_package(ECM 1.4.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR} ${PROJECT_SOURCE_DIR})
 
