@@ -1,44 +1,32 @@
-cmake_minimum_required(VERSION 3.5...3.27)
+cmake_minimum_required(VERSION 3.27)
+project(artemisos-settings-manager VERSION 2.0.2)
 
-project(artemisos-settings-manager VERSION 1.5.7 LANGUAGES C CXX)
-
-# Minimum Qt6 and KF6 versions
-set(QT_MIN_VERSION "6.0")
-set(KF6_MIN_VERSION "6.0")
-
-# Find ECM (Extra CMake Modules)
-find_package(ECM 1.4.0 REQUIRED NO_MODULE)
-
-# Extend module path for KDE macros and modules
-set(CMAKE_MODULE_PATH
-    ${ECM_MODULE_PATH}
-    ${ECM_KDE_MODULE_DIR}
-    ${PROJECT_SOURCE_DIR}/cmake
-)
-
-# Compiler standards
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Include KDE/ECM modules
-include(ECMInstallIcons)
-include(FeatureSummary)
+# ECM is required
+find_package(ECM 5.249 REQUIRED NO_MODULE)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
+
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings)
+include(FeatureSummary)
+include(ECMInstallIcons)
 
-# Find Qt6 packages required
-find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
+# Required Qt6 modules
+find_package(Qt6 REQUIRED COMPONENTS
     Core
     Gui
     Widgets
     DBus
     LinguistTools
+    Qml
 )
 
-# Find KDE Frameworks 6 packages required
-find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
+# Required KDE Frameworks 6 modules
+find_package(KF6 REQUIRED COMPONENTS
     CoreAddons
     Auth
     ConfigWidgets
@@ -47,12 +35,12 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     KCMUtils
 )
 
-# Find ICU (optional, but recommended)
+# Optional
 find_package(ICU REQUIRED)
 
-# Add your project subdirectories
+# Subdirectories
 add_subdirectory(resources)
 add_subdirectory(src)
 
-# Print summary of required features/packages
+# Summary
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
